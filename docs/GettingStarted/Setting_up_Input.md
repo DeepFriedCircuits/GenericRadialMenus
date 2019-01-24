@@ -7,6 +7,10 @@ So naturally, this is the most convenient place to put the radial menu input.
 
 There are two methods of getting input. Implementing an interface or inheriting from a base class. Both will do the same thing, but inheriting requires only one step.
 
+    Important:
+        If you already have a player controller that inherits from another controller,
+        maybe one from another plugin or asset, the inheritance method may be easier.
+
 # Method 1: Inheritance
 
 Open your `PlayerController` blueprint (or make a new one, see step one of the next method.) and go to class settings.
