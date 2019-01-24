@@ -1,11 +1,11 @@
 # Setting Up Input
 
-Unreal Engine 4 uses PlayerControllers as a mediator of input between player and the game.
+Unreal Engine 4 uses `PlayerController` class as a mediator of input between player and the game.
 While pawns and other actors *can* recieve input, the player controller is the best place for things like menu input and other universal inputs such as pause and play, since they do not
-rely on a player pawn and may need to be used in a situation such as the player isn't spawned yet, but some settings must be selected, or the player wants to back out of a match.
+rely on a player pawn and may need to be used in a situation where a pawn doesn't exist. One such scenario would be when the player isn't spawned yet, but some settings must be selected, or the player wants to back out of a match.
 So naturally, this is the most convenient place to put the radial menu input.
 
-There are two methods of getting input. Implementing an interface, or inheriting from a base class. Both will do the same thing, but inheriting requires only one step.
+There are two methods of getting input. Implementing an interface or inheriting from a base class. Both will do the same thing, but inheriting requires only one step.
 
 # Method 1: Inheritance
 
