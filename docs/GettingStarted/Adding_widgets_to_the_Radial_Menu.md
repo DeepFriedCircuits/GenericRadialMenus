@@ -1,12 +1,12 @@
 # Adding widgets to the Radial Menu
 
-Adding widgets is easy with any other layout container in UE4.
+Adding widgets is easy as with any other layout container in UE4.
 
 First, create your widget. Here we'll use the `BasicRadialIcon_UMG` class.
 This widget only displays an icon, and can for many cases be all that's necessary for
 the menu.
 
-[![Image from Gyazo](https://i.gyazo.com/3bb9788f30feb31c3becb98decc5297b.png)](https://gyazo.com/3bb9788f30feb31c3becb98decc5297b)
+[![Image from Gyazo](https://i.gyazo.com/3bb9788f30feb31c3becb98decc5297b.png)](https://gyazo.com/3bb9788f30feb31c3becb98decc5297b.png)
 
 If additional functionality is needed, any widget class will work,
 just keep sizing in mind. Wrapping a widget in a `Size Box` and overriding the _Height_ and _Width_
@@ -15,7 +15,7 @@ is a great way to start.
 Next we'll drag our reference to our radial menu and call the 
 `Add Child to Radial Menu` function.
 
-[![Image from Gyazo](https://i.gyazo.com/a715b90f30cbafe2f3da0ae2ddfdaa16.png)](https://gyazo.com/a715b90f30cbafe2f3da0ae2ddfdaa16)
+[![Image from Gyazo](https://i.gyazo.com/a715b90f30cbafe2f3da0ae2ddfdaa16.png)](https://gyazo.com/a715b90f30cbafe2f3da0ae2ddfdaa16.png)
 
 This will add the widget to the radial menu, and position it in the proper location.
 
