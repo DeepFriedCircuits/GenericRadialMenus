@@ -4,10 +4,10 @@ pages:
     - FOOMP: index.md
     - Home: index.md
     - Getting Started:
-        - Setting Up Input: GettingStarted\Setting_up_Input.md
-        - Creating a menu with a radial menu yall: GettingStarted\Creating_a_menu_with_a_Radial_Menu.md
-        - Adding widgets to the Radial Menu: GettingStarted\Adding_widgets_to_the_Radial_Menu.md
-        - Radial Menu Settings: GettingStarted\RadialMenuSettings.md
+        - Setting Up Input: GettingStarted/Setting_up_Input.md
+        - Creating a menu with a radial menu yall: GettingStarted/Creating_a_menu_with_a_Radial_Menu.md
+        - Adding widgets to the Radial Menu: GettingStarted/Adding_widgets_to_the_Radial_Menu.md
+        - Radial Menu Settings: GettingStarted/RadialMenuSettings.md
     - Misc:
         - Setting a Player Controller: Misc\HowToAssignA_PlayerController.md
 
