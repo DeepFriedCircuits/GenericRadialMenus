@@ -1,6 +1,7 @@
 site_name: Generic Radial Menu - Documentation
 
 nav:
+    - FOOMP: index.md
     - Home: index.md
     - Getting Started:
         - Start Here: getting_started.md
