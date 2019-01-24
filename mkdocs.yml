@@ -1,2 +1,12 @@
 site_name: Generic Radial Menu - Documentation
+
+nav:
+    - Home: index.md
+    - Getting Started:
+        - Setting Up Input: GettingStarted\1setting_up_input.md
+        - Creating a menu with a radial menu: GettingStarted\2creating_first_widget.md
+        - Adding widgets to the Radial Menu: GettingStarted\3adding_icons.md
+        - Radial Menu Settings: GettingStarted\4radialmenu_settings.md
+    - Misc:
+        - Setting a Player Controller: Misc\setting_player_controller.md
 theme: readthedocs
