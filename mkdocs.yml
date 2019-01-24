@@ -9,6 +9,6 @@ pages:
         - Adding widgets to the Radial Menu: GettingStarted/Adding_widgets_to_the_Radial_Menu.md
         - Radial Menu Settings: GettingStarted/RadialMenuSettings.md
     - Misc:
-        - Setting a Player Controller: Misc\HowToAssignA_PlayerController.md
+        - Setting a Player Controller: Misc/HowToAssignA_PlayerController.md
 
 theme: readthedocs
