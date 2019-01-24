@@ -1,7 +1,6 @@
 site_name: Generic Radial Menu - Documentation
 
 pages:
-    - FOOMP: index.md
     - Home: index.md
     - Getting Started:
         - Setting Up Input: GettingStarted/Setting_up_Input.md
