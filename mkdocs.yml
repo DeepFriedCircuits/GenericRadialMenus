@@ -5,11 +5,11 @@ pages:
     - Home: index.md
     - Getting Started:
         - Start Here: getting_started.md
-        - Setting Up Input: GettingStarted\1setting_up_input.md
-        - Creating a menu with a radial menu: GettingStarted\2creating_first_widget.md
-        - Adding widgets to the Radial Menu: GettingStarted\3adding_icons.md
-        - Radial Menu Settings: GettingStarted\4radialmenu_settings.md
+        - Setting Up Input: GettingStarted\Setting_up_Input.md
+        - Creating a menu with a radial menu yall: GettingStarted\Creating_a_menu_with_a_Radial_Menu.md
+        - Adding widgets to the Radial Menu: GettingStarted\Adding_widgets_to_the_Radial_Menu.md
+        - Radial Menu Settings: GettingStarted\RadialMenuSettings.md
     - Misc:
-        - Setting a Player Controller: Misc\setting_player_controller.md
+        - Setting a Player Controller: Misc\HowToAssignA_PlayerController.md
 
 theme: readthedocs
