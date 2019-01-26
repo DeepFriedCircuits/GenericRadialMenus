@@ -1,0 +1,1 @@
+# Expanding the Inventory Template

@@ -14,4 +14,4 @@ This is all that is needed for the radial menu to work.
 
 [![Image from Gyazo](https://i.gyazo.com/7749181dbd3d92349fc08c9a6d96c60a.png)](https://gyazo.com/7749181dbd3d92349fc08c9a6d96c60a.png)
 
-Now, you'll want to add actual icons for use in the next section.
+Next, we'll cover adding widgets in the next section.

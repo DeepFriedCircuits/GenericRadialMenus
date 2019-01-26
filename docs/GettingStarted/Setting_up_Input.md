@@ -1,31 +1,40 @@
 # Setting Up Input
 
-Unreal Engine 4 uses `PlayerController` class as a mediator of input between player and the game.
+Unreal Engine 4 uses the `PlayerController` class as a mediator of input between players and the game.
 While pawns and other actors *can* recieve input, the player controller is the best place for things like menu input and other universal inputs such as pause and play, since they do not
 rely on a player pawn and may need to be used in a situation where a pawn doesn't exist. One such scenario would be when the player isn't spawned yet, but some settings must be selected, or the player wants to back out of a match.
 So naturally, this is the most convenient place to put the radial menu input.
 
 There are two methods of getting input. Implementing an interface or inheriting from a base class. Both will do the same thing, but inheriting requires only one step.
 
-Important:
-If you already have a player controller that inherits from another controller,
-_maybe one from another plugin or asset, the inheritance method may be easier.
+If you are already fluent in the workings of UE4 and the blueprint system, the steps are these:
+#### Method 1:
+* Inherit from the RIPlayerController
+#### Method 2:
+* Implement the IRadialInput interface in your player controller. Next, implement the "GetJoystickDirection" method.
+
+* Fill out the method with the contents from the
+RIPlayerController "GetJoystickDirection" method.
+
+***Important:***
+_If you already have a player controller that inherits from another controller,_
+_maybe one from another plugin or asset, the interface method may be easier, and more logical._
 
 # Method 1: Inheritance
 
-Open your `PlayerController` blueprint (or make a new one, see step one of the next method.) and go to class settings.
+Open your `PlayerController` blueprint (or to make a new one, see step one of the next method.) and go to class settings.
 
 [![Image from Gyazo](https://i.gyazo.com/d141842adb0c5b447a3fef1c2a5e6119.png)](https://gyazo.com/d141842adb0c5b447a3fef1c2a5e6119.png)
 
-then click parent class,
+then click parent class option button,
 
 [![Image from Gyazo](https://i.gyazo.com/11d4444147ba6a42f37bf95956c5fb3b.png)](https://gyazo.com/11d4444147ba6a42f37bf95956c5fb3b.png)
 
-and choose `RIPlayerController`.
+and choose `RIPlayerController` _(short for Radial Input Player Controller)_. You may have to search to find it, depending on the contents of your project.
 
 [![Image from Gyazo](https://i.gyazo.com/c13338f198fc3c96c71d4ae7d5de331d.png)](https://gyazo.com/c13338f198fc3c96c71d4ae7d5de331d.png)
 
-Now make sure your controller is being used in your gamemode, and joystick input should now be active for your radial menus!
+Now make sure your `PlayerController` is being used in your gamemode, and joystick input should now be active for your radial menus!
 
 [How to assign a player controller for use.](../Misc/HowToAssignA_PlayerController.md)
 
@@ -70,10 +79,10 @@ Upon opening, you should be greeted with this:
 
 [![Image from Gyazo](https://i.gyazo.com/a2b0d0a46d5cf4dd0e57993c727084e9.png)](https://gyazo.com/a2b0d0a46d5cf4dd0e57993c727084e9.png)
 
-####Note:
-_If you don't want to make the nodes yourself, just check out the_ `GetJoystickDirection` _method on the_ `RIPlayerController` _class._
-_You can just copy the nodes and paste them into your new function, just make sure you get all of the connections setup as they were from_
-_the copied version._
+###Note:
+***If you don't want to make the nodes yourself, just check out the*** `GetJoystickDirection` ***method on the*** `RIPlayerController` ***class.***
+***You can just copy the nodes and paste them into your new function, just make sure you get all of the connections setup as they were from***
+***the copied version.***
 
 
 Right click the graph area and search for `thumbstick axis`. This should show the following nodes:
@@ -92,13 +101,10 @@ Now select all four nodes, and set the settings on each nodes to match this:
 
 [![Image from Gyazo](https://i.gyazo.com/47dffe568d2bb4a05d842c532d159936.png)](https://gyazo.com/47dffe568d2bb4a05d842c532d159936.png)
 
-By disabling `Consume Input` we prevent the controller from removing input from the camera and motion controls, and `Execute when Paused` will allow the radial menus 
+By disabling `Consume Input` we prevent the controller from removing input from the camera and motion controls, and `Execute when Paused` will allow the radial menus
 to be used in pause menus.
-and a `Make Vector2D` off of the return node.
 
-[![Image from Gyazo](https://i.gyazo.com/1067090720d0c2c51d8aea20a4bb7662.png)](https://gyazo.com/1067090720d0c2c51d8aea20a4bb7662.png)
-
-Then connect x and y for each stick to their own `Vector2D` and arrange them like so, making sure to ***multiply the Y axis of the left stick by -1***.
+Now add two `Make Vector2D` nodes, then connect x and y for each stick to their own `Vector2D`x and y inputs. Arrange them like so, making sure to ***multiply the Y axis of the left stick by -1***.
 It should look like this once completed:
 
 [![Image from Gyazo](https://i.gyazo.com/4ffd99431caa2da52fea089c8bfb2d03.png)](https://gyazo.com/4ffd99431caa2da52fea089c8bfb2d03.png)

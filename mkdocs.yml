@@ -1,12 +1,16 @@
 site_name: Generic Radial Menu - Documentation
 
-pages:
+nav:
     - Home: index.md
     - Getting Started:
         - Setting Up Input: GettingStarted/Setting_up_Input.md
         - Creating a menu with a Radial Menu: GettingStarted/Creating_a_menu_with_a_Radial_Menu.md
         - Adding widgets to the Radial Menu: GettingStarted/Adding_widgets_to_the_Radial_Menu.md
         - Radial Menu Settings: GettingStarted/RadialMenuSettings.md
+    - Going Deeper:
+        - Expanding the Build Template: GoingDeeper/extending_build_template.md
+        - Expanding the Inventory Template: GoingDeeper/extending_inventory.md
+        - Setting up Custom Widgets: GoingDeeper/custom_widgets.md
     - Misc:
         - Setting a Player Controller: Misc/HowToAssignA_PlayerController.md
 
