@@ -1,6 +1,6 @@
 site_name: Generic Radial Menu - Documentation
 
-nav:
+pages:
     - Home: index.md
     - Getting Started:
         - Setting Up Input: GettingStarted/Setting_up_Input.md
