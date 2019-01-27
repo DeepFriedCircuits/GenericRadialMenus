@@ -8,9 +8,13 @@ So naturally, this is the most convenient place to put the radial menu input.
 There are two methods of getting input. Implementing an interface or inheriting from a base class. Both will do the same thing, but inheriting requires only one step.
 
 If you are already fluent in the workings of UE4 and the blueprint system, the steps are these:
-#### Method 1:
+
+**Method 1:**
+
 * Inherit from the RIPlayerController
-#### Method 2:
+
+**Method 2:**
+
 * Implement the IRadialInput interface in your player controller. Next, implement the "GetJoystickDirection" method.
 
 * Fill out the method with the contents from the
@@ -44,6 +48,8 @@ This method will work with any `PlayerController` and makes it possible to add i
 Interfaces are merely a coding tool to allow you to declare what methods a class will have, allowing other classes to communicate with those functions
 without needing to cast to your specific class. It's a great way to handle many different things that may have completely different classes but similar
 functions, such as interactable objects.
+
+_If you've never used interfaces before, check out the UE4 documentation here:_ <a href="https://docs.unrealengine.com/en-us/Engine/Blueprints/UserGuide/Types/Interface/UsingInterfaces" target="_blank">Unreal Interface Documentation</a>
 
 ### Step 1: Create a PlayerController blueprint
 
@@ -82,7 +88,7 @@ Upon opening, you should be greeted with this:
 ###Note:
 ***If you don't want to make the nodes yourself, just check out the*** `GetJoystickDirection` ***method on the*** `RIPlayerController` ***class.***
 ***You can just copy the nodes and paste them into your new function, just make sure you get all of the connections setup as they were from***
-***the copied version.***
+***the original version.***
 
 
 Right click the graph area and search for `thumbstick axis`. This should show the following nodes:
