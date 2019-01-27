@@ -110,7 +110,7 @@ Now select all four nodes, and set the settings on each nodes to match this:
 By disabling `Consume Input` we prevent the controller from removing input from the camera and motion controls, and `Execute when Paused` will allow the radial menus
 to be used in pause menus.
 
-Now add two `Make Vector2D` nodes, then connect x and y for each stick to their own `Vector2D`x and y inputs. Arrange them like so, making sure to ***multiply the Y axis of the left stick by -1***.
+Now add two `Make Vector2D` nodes, then connect x and y for each stick to their own `Vector2D` x and y inputs. Arrange them like so, making sure to ***multiply the Y axis of the left stick by -1***.
 It should look like this once completed:
 
 [![Image from Gyazo](https://i.gyazo.com/4ffd99431caa2da52fea089c8bfb2d03.png)](https://gyazo.com/4ffd99431caa2da52fea089c8bfb2d03.png)

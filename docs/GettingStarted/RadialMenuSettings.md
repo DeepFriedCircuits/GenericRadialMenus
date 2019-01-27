@@ -10,7 +10,7 @@ The default number of segments in the radial menu.
 
 ###Material Base
 
-What material to use in the radial menu. Check `PieMenus/Materials` for different options.
+What material to use in the radial menu. Check `GenericRadialMenus/Materials` for different options.
 
 ###Allow Resizing
 
@@ -46,6 +46,7 @@ _up, down, left and right_, making input more intuitive on a controller.
 
 ###Default Player Index
 
-In the situation where you have supplied no owning parent to the parent widget,
-this will be the controller index the menu will use in the `GetPlayerController`
-node. For most situations 0 will be all that's needed.
+In the situation where the Radial Widget cannot find a player controller through
+`GetOwningPlayer` or one hasn't been assigned manually, this will be the controller
+index the menu will use in the `GetPlayerController` node. For most situations
+0 will be all that's needed.
