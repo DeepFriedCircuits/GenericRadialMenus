@@ -1,6 +1,9 @@
 # How to assign a Custom Player Controller
 
-If you're unsure how to assign a custom player controller, make sure you've got a game mode assigned, and do the following:
+Changing the default `PlayerController` class requires a `GameMode`. If you don't know
+about the `GameMode` check out <a href="https://docs.unrealengine.com/en-US/Gameplay/Framework/GameMode" target="_blank">this page from the Unreal Engine documentation. </a>
+
+If you're still unsure how to assign a custom player controller, make sure you've got your game mode assigned, and do the following:
 
 Click the `Blueprints` tab on the main toolbar of the level editor.
 
