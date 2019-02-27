@@ -7,16 +7,13 @@ pages:
         - Creating a menu with a Radial Menu: GettingStarted/Creating_a_menu_with_a_Radial_Menu.md
         - Adding widgets to the Radial Menu: GettingStarted/Adding_widgets_to_the_Radial_Menu.md
         - Radial Menu Settings: GettingStarted/RadialMenuSettings.md
-
     - Misc:
         - Setting a Player Controller: Misc/HowToAssignA_PlayerController.md
-
     - Going Deeper:
         - Expanding the MultiMenu Template (Part 1): GoingDeeper/extending_build_template.md
         - Expanding the MultiMenu Template (Part 2): GoingDeeper/extending_build_2.md
         - Expanding the Inventory Template: GoingDeeper/extending_inventory.md
         - Setting up Custom Widgets: GoingDeeper/custom_widgets.md
-
 
 theme:
     name: readthedocs
