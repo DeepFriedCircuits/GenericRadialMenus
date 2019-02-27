@@ -11,14 +11,14 @@ If you are already fluent in the workings of UE4 and the blueprint system, the s
 
 **Method 1:**
 
-* Inherit from the RIPlayerController
+* Inherit from the **BP_RadialInputPlayerController**
 
 **Method 2:**
 
-* Implement the IRadialInput interface in your player controller. Next, implement the "GetJoystickDirection" method.
+* Implement the **IRadialInput** interface in your player controller. Next, implement the "GetJoystickDirection" method.
 
 * Fill out the method with the contents from the
-RIPlayerController "GetJoystickDirection" method.
+BP_RadialInputPlayerController "GetJoystickDirection" method.
 
 ***Important:***
 _If you already have a player controller that inherits from another controller,_
@@ -34,9 +34,9 @@ then click parent class option button,
 
 [![Image from Gyazo](https://i.gyazo.com/11d4444147ba6a42f37bf95956c5fb3b.png)](https://gyazo.com/11d4444147ba6a42f37bf95956c5fb3b.png)
 
-and choose `RIPlayerController` _(short for Radial Input Player Controller)_. You may have to search to find it, depending on the contents of your project.
+and choose `BP_RadialInputPlayerController`. You may have to search to find it, depending on the contents of your project.
 
-[![Image from Gyazo](https://i.gyazo.com/c13338f198fc3c96c71d4ae7d5de331d.png)](https://gyazo.com/c13338f198fc3c96c71d4ae7d5de331d.png)
+[![Image from Gyazo](https://i.gyazo.com/f5e3bc2c1636ad795b73be9a3a344227.png)](https://i.gyazo.com/f5e3bc2c1636ad795b73be9a3a344227.png)
 
 Now make sure your `PlayerController` is being used in your gamemode, and joystick input should now be active for your radial menus!
 
@@ -86,7 +86,7 @@ Upon opening, you should be greeted with this:
 [![Image from Gyazo](https://i.gyazo.com/a2b0d0a46d5cf4dd0e57993c727084e9.png)](https://gyazo.com/a2b0d0a46d5cf4dd0e57993c727084e9.png)
 
 ###Note:
-***If you don't want to make the nodes yourself, just check out the*** `GetJoystickDirection` ***method on the*** `RIPlayerController` ***class.***
+***If you don't want to make the nodes yourself, just check out the*** `GetJoystickDirection` ***method on the*** `BP_RadialInputPlayerController` ***class.***
 ***You can just copy the nodes and paste them into your new function, just make sure you get all of the connections setup as they were from***
 ***the original version.***
 
