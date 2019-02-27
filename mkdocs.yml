@@ -11,6 +11,13 @@ pages:
     - Misc:
         - Setting a Player Controller: Misc/HowToAssignA_PlayerController.md
 
+    - [UNDER CONSTRUCTION] Going Deeper:
+        - Expanding the MultiMenu Template (Part 1): GoingDeeper/extending_build_template.md
+        - Expanding the MultiMenu Template (Part 2): GoingDeeper/extending_build_2.md
+        - Expanding the Inventory Template: GoingDeeper/extending_inventory.md
+        - Setting up Custom Widgets: GoingDeeper/custom_widgets.md
+
+
 theme:
     name: readthedocs
     highlightjs: true
