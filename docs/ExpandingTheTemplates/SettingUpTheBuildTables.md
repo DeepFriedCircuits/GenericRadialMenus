@@ -4,7 +4,7 @@ For the categories to show your custom data, you'll need to first make a table u
 
 ![](https://gyazo.com/ac84c5e28fc622dc41f2331c2d69b092.png)
 
-Then add your categories, and make a data table for each one, using your custom data structure. Be sure your use the
+Then add your categories, and make a data table for each one, using your custom data structure. Be sure to use the
 same structure type for each otherwise the template would need serious modification.
 
 ![](https://gyazo.com/6f3e90328c41d7886a327a198e55e50b.png)
