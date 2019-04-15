@@ -9,6 +9,10 @@ pages:
         - Radial Menu Settings: GettingStarted/RadialMenuSettings.md
     - Misc:
         - Setting a Player Controller: Misc/HowToAssignA_PlayerController.md
+    - Expanding The Templates:
+        - Using the Multi Menu Template: ExpandingTheTemplates/UsingTheBuildTemplate.md
+        - Setting up the Category Tables: ExpandingTheTemplates/SettingUpTheBuildTables.md
+        - Multi Menu Template Events: ExpandingTheTemplates/MultiMenuEvents.md
 theme:
     name: readthedocs
     highlightjs: true
