@@ -16,4 +16,4 @@ Use the category parameter to locate the proper table and use the `Sub Item` for
 actual data for gameplay.
 
 ### Cancel
-_Will be called when the user wants to exit the menu and not make a selection _
+_Will be called when the user wants to exit the menu and not make a selection_
