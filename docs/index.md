@@ -9,7 +9,8 @@ to them. You can also find a detailed description of every [exposed parameter on
 the radial menus here](./GettingStarted/RadialMenuSettings.md).
 
 **Please note: this documentation is still under construction, so if you run into
-UNDER CONSTRUCTION anywhere on the site, that page is not finished yet.**
+UNDER CONSTRUCTION anywhere on the site, that page is not finished and should not be used
+as reference yet.**
 
 If you can't find the answers to your questions here, feel free to join the [**PolyHavoc**
 discord channel](https://discord.gg/uqXdbEK) and ask in the **support** channel.
