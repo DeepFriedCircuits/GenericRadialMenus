@@ -4,7 +4,7 @@ First, duplicate the `UMG_MultiMenuTemplate` blueprint and move it into a folder
 
 ![](https://gyazo.com/ae12c87b0a48f669106dba4f451aa42c.png)
 
-Then open your new Blueprint and locate the following function `GetItemName`, and replace the
+Then open your new Blueprint and locate the following function `GetItemData`, and replace the
 `GetDataTableRow` `OutRow` to break out your structure type. Then, connect your items data into
 a `Make PTItemDefinition` struct.
 
